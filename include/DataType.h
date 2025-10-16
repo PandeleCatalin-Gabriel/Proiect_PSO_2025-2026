@@ -6,5 +6,6 @@ class DataType: public DataType_Interface
 private:
     
 public:
-
+    virtual ~DataType() = default;
+    
 };

@@ -9,6 +9,6 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(PROIECT_PSO ${SOURCE})
+add_executable(PROIECT_PSO ${SOURCES})
 
 target_link_libraries(PROIECT_PSO pthread)
