@@ -2,8 +2,7 @@
 #include<string>
 #include<map>
 #include<memory>
-
-class Tabel;// facem forward declaration pentru tabele
+#include"Tabel.h"
 
 class Database
 {
