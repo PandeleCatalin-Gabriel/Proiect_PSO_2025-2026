@@ -81,3 +81,18 @@ bool DataType_Int::operator>=(const DataType_Interface &other) const
     }
     return false;
 }
+
+std::string DataType_Int::toString() const
+{
+    return std::to_string(value);
+}
+
+std::string DataType_Int::getType() const
+{
+    return "INT";
+}
+
+std::unique_ptr<DataType_Interface> DataType_Int::clone() const
+{
+    return std::make_unique<DataType_Int>(value);
+}
