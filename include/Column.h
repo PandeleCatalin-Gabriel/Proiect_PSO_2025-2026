@@ -24,4 +24,6 @@ public:
     bool getIsPrimaryKey()const;
     bool getIsNullable()const;
     bool getHasIndex()const;
+
+    void setHasIndex(bool idx) { hasIndex = idx; }
 };
