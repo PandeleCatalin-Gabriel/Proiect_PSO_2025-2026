@@ -20,7 +20,6 @@ int main() {
     user2["id"] = std::make_shared<DataType_Int>(200);
     user2["name"] = std::make_shared<DataType_Varchar>("Ana", 50);
     users->insertRow(user2);
-
     
     return 0;
 }
