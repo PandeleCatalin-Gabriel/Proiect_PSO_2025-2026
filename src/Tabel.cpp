@@ -169,7 +169,7 @@ bool Tabel::deleteRow(const std::shared_ptr<DataType_Interface>& primaryKey) {
         primaryIndex->remove(primaryKey);
     }
     
-    std::cout << "Rând șters cu PRIMARY KEY = " << primaryKey->toString() << "\n";
+    std::cout << "Rans sters cu PRIMARY KEY = " << primaryKey->toString() << "\n";
     return true;
 }
 
