@@ -1,7 +1,7 @@
 CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o: \
  /home/gabi/Desktop/Proiect/src/Row.cpp /usr/include/stdc-predef.h \
- /home/gabi/Desktop/Proiect/include/Row.h /usr/include/c++/13/iostream \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/gabi/Desktop/Proiect/src/../include/Row.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -154,7 +154,7 @@ CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/gabi/Desktop/Proiect/include/DataType_Interface.h \
+ /home/gabi/Desktop/Proiect/src/../include/DataType_Interface.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \

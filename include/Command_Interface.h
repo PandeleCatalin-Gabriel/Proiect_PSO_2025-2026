@@ -5,6 +5,7 @@
 class Command_Interface
 {
 public:
-    virtual ~Command_Interface();
-    virtual void execCommand(Database db)=0;
+    //virtual ~Command_Interface();
+    
+    virtual std::string execute(Database& db)=0;
 };

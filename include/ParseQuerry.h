@@ -1,6 +1,9 @@
 #pragma once
 #include<iostream>
-#include"Commnad_Interface.h"
+#include"Command_Interface.h"
+#include"Delete_Command.h"
+#include"Insert_Command.h"
+#include"Select_Command.h"
 #include<string.h>
 
 class ParseQuerry

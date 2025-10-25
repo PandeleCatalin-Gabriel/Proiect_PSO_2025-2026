@@ -1,4 +1,4 @@
-#include "Column.h"
+#include "../include/Column.h"
 
 std::string Column::getName() const
 {

@@ -1,5 +1,7 @@
-CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: \
- /home/gabi/Desktop/Proiect/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o: \
+ /home/gabi/Desktop/Proiect/src/ParseQuerry.cpp \
+ /usr/include/stdc-predef.h \
+ /home/gabi/Desktop/Proiect/src/../include/ParseQuerry.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -149,29 +151,22 @@ CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/gabi/Desktop/Proiect/src/../include/DatabaseManager.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h \
+ /home/gabi/Desktop/Proiect/src/../include/Command_Interface.h \
+ /home/gabi/Desktop/Proiect/src/../include/Database.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/mutex \
- /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
- /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/limits /usr/include/c++/13/ctime \
- /usr/include/c++/13/bits/parse_numbers.h \
- /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/memory \
- /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
  /usr/include/c++/13/bits/allocated_ptr.h \
@@ -181,11 +176,16 @@ CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/std_thread.h \
- /usr/include/c++/13/bits/this_thread_sleep.h \
- /home/gabi/Desktop/Proiect/src/../include/Database.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/mutex \
+ /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
+ /usr/include/c++/13/cstdint /usr/include/c++/13/limits \
+ /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h \
  /home/gabi/Desktop/Proiect/src/../include/Tabel.h \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
  /home/gabi/Desktop/Proiect/src/../include/Column.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /home/gabi/Desktop/Proiect/src/../include/Row.h \
@@ -202,9 +202,7 @@ CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
- /home/gabi/Desktop/Proiect/src/../include/DataType_Int.h \
- /home/gabi/Desktop/Proiect/src/../include/DataType.h \
- /home/gabi/Desktop/Proiect/src/../include/DataType_Varchar.h \
- /usr/include/string.h /usr/include/strings.h \
+ /home/gabi/Desktop/Proiect/src/../include/Delete_Command.h \
  /home/gabi/Desktop/Proiect/src/../include/Insert_Command.h \
- /home/gabi/Desktop/Proiect/src/../include/Command_Interface.h
+ /home/gabi/Desktop/Proiect/src/../include/Select_Command.h \
+ /usr/include/string.h /usr/include/strings.h

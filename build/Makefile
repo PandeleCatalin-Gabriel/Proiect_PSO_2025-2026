@@ -297,6 +297,54 @@ src/DatabaseManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.s
 .PHONY : src/DatabaseManager.cpp.s
 
+src/Insert_Command.o: src/Insert_Command.cpp.o
+.PHONY : src/Insert_Command.o
+
+# target to build an object file
+src/Insert_Command.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o
+.PHONY : src/Insert_Command.cpp.o
+
+src/Insert_Command.i: src/Insert_Command.cpp.i
+.PHONY : src/Insert_Command.i
+
+# target to preprocess a source file
+src/Insert_Command.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.i
+.PHONY : src/Insert_Command.cpp.i
+
+src/Insert_Command.s: src/Insert_Command.cpp.s
+.PHONY : src/Insert_Command.s
+
+# target to generate assembly for a file
+src/Insert_Command.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.s
+.PHONY : src/Insert_Command.cpp.s
+
+src/ParseQuerry.o: src/ParseQuerry.cpp.o
+.PHONY : src/ParseQuerry.o
+
+# target to build an object file
+src/ParseQuerry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o
+.PHONY : src/ParseQuerry.cpp.o
+
+src/ParseQuerry.i: src/ParseQuerry.cpp.i
+.PHONY : src/ParseQuerry.i
+
+# target to preprocess a source file
+src/ParseQuerry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.i
+.PHONY : src/ParseQuerry.cpp.i
+
+src/ParseQuerry.s: src/ParseQuerry.cpp.s
+.PHONY : src/ParseQuerry.s
+
+# target to generate assembly for a file
+src/ParseQuerry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.s
+.PHONY : src/ParseQuerry.cpp.s
+
 src/Row.o: src/Row.cpp.o
 .PHONY : src/Row.o
 
@@ -399,6 +447,12 @@ help:
 	@echo "... src/DatabaseManager.o"
 	@echo "... src/DatabaseManager.i"
 	@echo "... src/DatabaseManager.s"
+	@echo "... src/Insert_Command.o"
+	@echo "... src/Insert_Command.i"
+	@echo "... src/Insert_Command.s"
+	@echo "... src/ParseQuerry.o"
+	@echo "... src/ParseQuerry.i"
+	@echo "... src/ParseQuerry.s"
 	@echo "... src/Row.o"
 	@echo "... src/Row.i"
 	@echo "... src/Row.s"

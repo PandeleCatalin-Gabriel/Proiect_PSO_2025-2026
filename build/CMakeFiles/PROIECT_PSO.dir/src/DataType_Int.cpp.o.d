@@ -1,9 +1,9 @@
 CMakeFiles/PROIECT_PSO.dir/src/DataType_Int.cpp.o: \
  /home/gabi/Desktop/Proiect/src/DataType_Int.cpp \
  /usr/include/stdc-predef.h \
- /home/gabi/Desktop/Proiect/include/DataType_Int.h \
- /home/gabi/Desktop/Proiect/include/DataType.h \
- /home/gabi/Desktop/Proiect/include/DataType_Interface.h \
+ /home/gabi/Desktop/Proiect/src/../include/DataType_Int.h \
+ /home/gabi/Desktop/Proiect/src/../include/DataType.h \
+ /home/gabi/Desktop/Proiect/src/../include/DataType_Interface.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

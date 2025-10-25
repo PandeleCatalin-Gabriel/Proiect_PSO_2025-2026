@@ -15,6 +15,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/gabi/Desktop/Proiect/src/DataType_Varchar.cpp" "CMakeFiles/PROIECT_PSO.dir/src/DataType_Varchar.cpp.o" "gcc" "CMakeFiles/PROIECT_PSO.dir/src/DataType_Varchar.cpp.o.d"
   "/home/gabi/Desktop/Proiect/src/Database.cpp" "CMakeFiles/PROIECT_PSO.dir/src/Database.cpp.o" "gcc" "CMakeFiles/PROIECT_PSO.dir/src/Database.cpp.o.d"
   "/home/gabi/Desktop/Proiect/src/DatabaseManager.cpp" "CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.o" "gcc" "CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.o.d"
+  "/home/gabi/Desktop/Proiect/src/Insert_Command.cpp" "CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o" "gcc" "CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o.d"
+  "/home/gabi/Desktop/Proiect/src/ParseQuerry.cpp" "CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o" "gcc" "CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o.d"
   "/home/gabi/Desktop/Proiect/src/Row.cpp" "CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o" "gcc" "CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o.d"
   "/home/gabi/Desktop/Proiect/src/Tabel.cpp" "CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o" "gcc" "CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o.d"
   "/home/gabi/Desktop/Proiect/src/main.cpp" "CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o" "gcc" "CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o.d"

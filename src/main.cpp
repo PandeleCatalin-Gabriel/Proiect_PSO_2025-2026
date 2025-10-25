@@ -2,6 +2,7 @@
 #include "../include/DatabaseManager.h"
 #include "../include/DataType_Int.h"
 #include "../include/DataType_Varchar.h"
+#include "../include/Insert_Command.h"
 
 int main() {
     DatabaseManager manager("TestDB","./data");
@@ -20,6 +21,14 @@ int main() {
     user2["id"] = std::make_shared<DataType_Int>(200);
     user2["name"] = std::make_shared<DataType_Varchar>("Ana", 50);
     users->insertRow(user2);
+    Insert_Command cmd;
+    cmd.parseCommand("INSERT INTO users VALUES (100, 'Ion Popescu', 25)");
     
+    std::cout << "Table: " << cmd.getTableName() << "\n";
+    std::cout << "Fields: ";
+    for (const auto& field : cmd.getFields()) {
+        std::cout << "[" << field << "] ";
+    }
+    std::cout << "\n";
     return 0;
 }

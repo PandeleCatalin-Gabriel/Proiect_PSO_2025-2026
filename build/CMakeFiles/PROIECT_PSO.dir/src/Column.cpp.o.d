@@ -1,7 +1,7 @@
 CMakeFiles/PROIECT_PSO.dir/src/Column.cpp.o: \
  /home/gabi/Desktop/Proiect/src/Column.cpp /usr/include/stdc-predef.h \
- /home/gabi/Desktop/Proiect/include/Column.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/gabi/Desktop/Proiect/src/../include/Column.h \
+ /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
