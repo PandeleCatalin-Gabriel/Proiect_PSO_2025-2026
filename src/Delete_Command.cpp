@@ -3,7 +3,7 @@
 #include "../include/DataType_Varchar.h"
 #include "../include/DataType_Date.h"
 
-std::string trim(const std::string& str) {
+static std::string trim(const std::string& str) {
     size_t first = str.find_first_not_of(" \t");
     if (first == std::string::npos) return "";
     

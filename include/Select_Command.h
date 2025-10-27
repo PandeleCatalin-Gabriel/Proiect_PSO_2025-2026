@@ -1,24 +1,29 @@
 #pragma once
+#include <iostream>
 #include <string>
-#include <memory>
+#include <vector>
 #include "Command_Interface.h"
-#include "DataType_Interface.h"
 
 class Select_Command : public Command_Interface
 {
 private:
     std::string tableName;
-    std::string whereColumn;
-    std::shared_ptr<DataType_Interface> whereValue;
     bool selectAll;
+    std::vector<std::string> selectedColumns;
+    bool hasWhere;
+    std::string whereColumn;
+    std::string whereValue;
     
 public:
-    Select_Command(const std::string& table)
-    : tableName(table), selectAll(true) {}
+    Select_Command() : selectAll(false), hasWhere(false) {}
     
-    Select_Command(const std::string& table, const std::string& col, 
-    const std::shared_ptr<DataType_Interface>& val)
-    : tableName(table), whereColumn(col), whereValue(val), selectAll(false) {}
-    
+    void parseCommand(std::string command);
     std::string execute(Database& db) override;
+    
+    std::string getTableName() const { return tableName; }
+    bool getSelectAll() const { return selectAll; }
+    const std::vector<std::string>& getSelectedColumns() const { return selectedColumns; }
+    bool getHasWhere() const { return hasWhere; }
+    std::string getWhereColumn() const { return whereColumn; }
+    std::string getWhereValue() const { return whereValue; }
 };

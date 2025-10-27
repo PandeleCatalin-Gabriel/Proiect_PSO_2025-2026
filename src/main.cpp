@@ -4,6 +4,7 @@
 #include "../include/DataType_Varchar.h"
 #include "../include/Insert_Command.h"
 #include "../include/Delete_Command.h"
+#include "../include/Select_Command.h"
 
 int main() {
     DatabaseManager manager("TestDB", "./data");
@@ -40,7 +41,7 @@ int main() {
     
     std::cout << "  Table: " << deleteCmd.getTableName() << "\n";
     std::cout << "  Where: " << deleteCmd.getWhereColumn() 
-              << " = " << deleteCmd.getWhereValue() << "\n";
+    << " = " << deleteCmd.getWhereValue() << "\n";
     
     result = deleteCmd.execute(*db);
     std::cout << "Execute result: " << result << "\n";
@@ -48,8 +49,17 @@ int main() {
 
     for (const auto& row : users->getRows()) {
         std::cout << "  ID=" << row->getValue("id")->toString()
-                  << ", Name=" << row->getValue("name")->toString() << "\n";
+        << ", Name=" << row->getValue("name")->toString() << "\n";
     }
+    Select_Command selectCmd;
+    selectCmd.parseCommand("SELECT * FROM Users WHERE id = 200");
+    std::cout << "\n  Table: " << selectCmd.getTableName() << "\n";
+    if (selectCmd.getHasWhere()) {
+        std::cout << "  Where: " << selectCmd.getWhereColumn() 
+        << " = " << selectCmd.getWhereValue() << "\n";
+    }
+    result = selectCmd.execute(*db);
+    std::cout << "Execute result:\n" << result << "\n";
     
     
     return 0;
