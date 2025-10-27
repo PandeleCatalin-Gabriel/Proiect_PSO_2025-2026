@@ -207,4 +207,5 @@ CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: \
  /home/gabi/Desktop/Proiect/src/../include/DataType_Varchar.h \
  /usr/include/string.h /usr/include/strings.h \
  /home/gabi/Desktop/Proiect/src/../include/Insert_Command.h \
- /home/gabi/Desktop/Proiect/src/../include/Command_Interface.h
+ /home/gabi/Desktop/Proiect/src/../include/Command_Interface.h \
+ /home/gabi/Desktop/Proiect/src/../include/Delete_Command.h

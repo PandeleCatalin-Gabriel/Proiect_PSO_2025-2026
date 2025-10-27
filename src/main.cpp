@@ -3,32 +3,54 @@
 #include "../include/DataType_Int.h"
 #include "../include/DataType_Varchar.h"
 #include "../include/Insert_Command.h"
+#include "../include/Delete_Command.h"
 
 int main() {
-    DatabaseManager manager("TestDB","./data");
-    auto db =manager.getDatabase();
+    DatabaseManager manager("TestDB", "./data");
+    auto db = manager.getDatabase();
+    
     db->createTable("Users");
     auto users = db->getTable("Users");
     users->addColumn("id", "INT", 0, true, false);
     users->addColumn("name", "VARCHAR", 50, false, false);
-        
-    std::map<std::string, std::shared_ptr<DataType_Interface>> user1;
-    user1["id"] = std::make_shared<DataType_Int>(100);
-    user1["name"] = std::make_shared<DataType_Varchar>("Ion", 50);
-    users->insertRow(user1);
-        
-    std::map<std::string, std::shared_ptr<DataType_Interface>> user2;
-    user2["id"] = std::make_shared<DataType_Int>(200);
-    user2["name"] = std::make_shared<DataType_Varchar>("Ana", 50);
-    users->insertRow(user2);
-    Insert_Command cmd;
-    cmd.parseCommand("INSERT INTO users VALUES (100, 'Ion Popescu', 25)");
     
-    std::cout << "Table: " << cmd.getTableName() << "\n";
-    std::cout << "Fields: ";
-    for (const auto& field : cmd.getFields()) {
+    std::cout << "Tabela are " << users->getRows().size() << " rânduri\n\n";
+    
+    Insert_Command insertCmd;
+    insertCmd.parseCommand("INSERT INTO Users VALUES (100, 'Ion Popescu')");
+    
+    std::cout << "  Table: " << insertCmd.getTableName() << "\n";
+    std::cout << "  Fields: ";
+    for (const auto& field : insertCmd.getFields()) {
         std::cout << "[" << field << "] ";
     }
     std::cout << "\n";
+    
+    std::string result = insertCmd.execute(*db);
+    std::cout << "Execute result: " << result << "\n";
+    std::cout << "Tabela are acum " << users->getRows().size() << " rânduri\n\n";
+    
+    Insert_Command insertCmd2;
+    insertCmd2.parseCommand("INSERT INTO Users VALUES (200, 'Ana Maria')");
+    std::cout << insertCmd2.execute(*db) << "\n";
+    std::cout << "Tabela are acum " << users->getRows().size() << " rânduri\n\n";
+
+    Delete_Command deleteCmd;
+    deleteCmd.parseCommand("DELETE FROM Users WHERE id = 100");
+    
+    std::cout << "  Table: " << deleteCmd.getTableName() << "\n";
+    std::cout << "  Where: " << deleteCmd.getWhereColumn() 
+              << " = " << deleteCmd.getWhereValue() << "\n";
+    
+    result = deleteCmd.execute(*db);
+    std::cout << "Execute result: " << result << "\n";
+    std::cout << "Tabela are acum " << users->getRows().size() << " rânduri\n\n";
+
+    for (const auto& row : users->getRows()) {
+        std::cout << "  ID=" << row->getValue("id")->toString()
+                  << ", Name=" << row->getValue("name")->toString() << "\n";
+    }
+    
+    
     return 0;
 }

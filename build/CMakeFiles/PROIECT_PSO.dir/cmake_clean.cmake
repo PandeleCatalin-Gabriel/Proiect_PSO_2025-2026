@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PROIECT_PSO.dir/src/Database.cpp.o.d"
   "CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.o"
   "CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.o.d"
+  "CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o"
+  "CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o.d"
   "CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o"
   "CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o.d"
   "CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o"

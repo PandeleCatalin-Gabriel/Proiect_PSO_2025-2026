@@ -24,24 +24,11 @@
           "data": {
             "id": {
               "type": "INT",
-              "value": "100"
-            },
-            "name": {
-              "type": "VARCHAR",
-              "value": "Ion"
-            }
-          },
-          "row_id": 1
-        },
-        {
-          "data": {
-            "id": {
-              "type": "INT",
               "value": "200"
             },
             "name": {
               "type": "VARCHAR",
-              "value": "Ana"
+              "value": "Ana Maria"
             }
           },
           "row_id": 2

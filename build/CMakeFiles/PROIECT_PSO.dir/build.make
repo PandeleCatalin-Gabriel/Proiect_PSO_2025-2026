@@ -167,10 +167,24 @@ CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabi/Desktop/Proiect/src/DatabaseManager.cpp -o CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.s
 
+CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o: CMakeFiles/PROIECT_PSO.dir/flags.make
+CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o: /home/gabi/Desktop/Proiect/src/Delete_Command.cpp
+CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o: CMakeFiles/PROIECT_PSO.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o -MF CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o.d -o CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o -c /home/gabi/Desktop/Proiect/src/Delete_Command.cpp
+
+CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabi/Desktop/Proiect/src/Delete_Command.cpp > CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.i
+
+CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabi/Desktop/Proiect/src/Delete_Command.cpp -o CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.s
+
 CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o: CMakeFiles/PROIECT_PSO.dir/flags.make
 CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o: /home/gabi/Desktop/Proiect/src/Insert_Command.cpp
 CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o: CMakeFiles/PROIECT_PSO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o -MF CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o.d -o CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o -c /home/gabi/Desktop/Proiect/src/Insert_Command.cpp
 
 CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.s: cmake_force
 CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o: CMakeFiles/PROIECT_PSO.dir/flags.make
 CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o: /home/gabi/Desktop/Proiect/src/ParseQuerry.cpp
 CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o: CMakeFiles/PROIECT_PSO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o -MF CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o.d -o CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o -c /home/gabi/Desktop/Proiect/src/ParseQuerry.cpp
 
 CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.s: cmake_force
 CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o: CMakeFiles/PROIECT_PSO.dir/flags.make
 CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o: /home/gabi/Desktop/Proiect/src/Row.cpp
 CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o: CMakeFiles/PROIECT_PSO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o -MF CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o.d -o CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o -c /home/gabi/Desktop/Proiect/src/Row.cpp
 
 CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.s: cmake_force
 CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o: CMakeFiles/PROIECT_PSO.dir/flags.make
 CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o: /home/gabi/Desktop/Proiect/src/Tabel.cpp
 CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o: CMakeFiles/PROIECT_PSO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o -MF CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o.d -o CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o -c /home/gabi/Desktop/Proiect/src/Tabel.cpp
 
 CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.s: cmake_force
 CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: CMakeFiles/PROIECT_PSO.dir/flags.make
 CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: /home/gabi/Desktop/Proiect/src/main.cpp
 CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: CMakeFiles/PROIECT_PSO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o -MF CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o.d -o CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o -c /home/gabi/Desktop/Proiect/src/main.cpp
 
 CMakeFiles/PROIECT_PSO.dir/src/main.cpp.i: cmake_force
@@ -246,6 +260,7 @@ PROIECT_PSO_OBJECTS = \
 "CMakeFiles/PROIECT_PSO.dir/src/DataType_Varchar.cpp.o" \
 "CMakeFiles/PROIECT_PSO.dir/src/Database.cpp.o" \
 "CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.o" \
+"CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o" \
 "CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o" \
 "CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o" \
 "CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o" \
@@ -262,6 +277,7 @@ PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/DataType_Int.cpp.o
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/DataType_Varchar.cpp.o
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/Database.cpp.o
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.o
+PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/Insert_Command.cpp.o
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/ParseQuerry.cpp.o
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/Row.cpp.o
@@ -269,7 +285,7 @@ PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/Tabel.cpp.o
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/build.make
 PROIECT_PSO: CMakeFiles/PROIECT_PSO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable PROIECT_PSO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/gabi/Desktop/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable PROIECT_PSO"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PROIECT_PSO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

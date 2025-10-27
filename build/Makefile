@@ -297,6 +297,30 @@ src/DatabaseManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/DatabaseManager.cpp.s
 .PHONY : src/DatabaseManager.cpp.s
 
+src/Delete_Command.o: src/Delete_Command.cpp.o
+.PHONY : src/Delete_Command.o
+
+# target to build an object file
+src/Delete_Command.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.o
+.PHONY : src/Delete_Command.cpp.o
+
+src/Delete_Command.i: src/Delete_Command.cpp.i
+.PHONY : src/Delete_Command.i
+
+# target to preprocess a source file
+src/Delete_Command.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.i
+.PHONY : src/Delete_Command.cpp.i
+
+src/Delete_Command.s: src/Delete_Command.cpp.s
+.PHONY : src/Delete_Command.s
+
+# target to generate assembly for a file
+src/Delete_Command.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROIECT_PSO.dir/build.make CMakeFiles/PROIECT_PSO.dir/src/Delete_Command.cpp.s
+.PHONY : src/Delete_Command.cpp.s
+
 src/Insert_Command.o: src/Insert_Command.cpp.o
 .PHONY : src/Insert_Command.o
 
@@ -447,6 +471,9 @@ help:
 	@echo "... src/DatabaseManager.o"
 	@echo "... src/DatabaseManager.i"
 	@echo "... src/DatabaseManager.s"
+	@echo "... src/Delete_Command.o"
+	@echo "... src/Delete_Command.i"
+	@echo "... src/Delete_Command.s"
 	@echo "... src/Insert_Command.o"
 	@echo "... src/Insert_Command.i"
 	@echo "... src/Insert_Command.s"
