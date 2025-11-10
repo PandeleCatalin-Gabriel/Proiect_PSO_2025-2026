@@ -1,0 +1,3 @@
+/home/gabi/Desktop/Proiect/build/CMakeFiles/PROIECT_PSO.dir
+/home/gabi/Desktop/Proiect/build/CMakeFiles/edit_cache.dir
+/home/gabi/Desktop/Proiect/build/CMakeFiles/rebuild_cache.dir
