@@ -9,7 +9,7 @@
 #include <sys/socket.h>
 #include <mutex>
 
-// Mutex global pentru protejarea accesului la baza de date
+
 static std::mutex dbMutex;
 
 SocketServer::SocketServer(int port, std::shared_ptr<DatabaseManager> manager) 
@@ -35,7 +35,7 @@ bool SocketServer::start() {
     }
     
     sockaddr_in serverAddr;
-    memset(&serverAddr, 0, sizeof(serverAddr)); // Important: zero out struct
+    memset(&serverAddr, 0, sizeof(serverAddr)); 
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_addr.s_addr = INADDR_ANY;
     serverAddr.sin_port = htons(port);
@@ -73,9 +73,9 @@ void SocketServer::waitForConnections() {
             continue;
         }
         
-        // Set socket timeout pentru a preveni blocarea
+     
         struct timeval timeout;
-        timeout.tv_sec = 30;  // 30 secunde timeout
+        timeout.tv_sec = 30;  
         timeout.tv_usec = 0;
         setsockopt(clientSocket, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
         setsockopt(clientSocket, SOL_SOCKET, SO_SNDTIMEO, &timeout, sizeof(timeout));
@@ -86,7 +86,7 @@ void SocketServer::waitForConnections() {
         
         std::cout << "New connection from " << clientIP << ":" << clientPort << "\n";
         
-        // Înregistrează conexiunea în mod thread-safe
+      
         int connId = -1;
         {
             std::lock_guard<std::mutex> lock(dbMutex);
@@ -94,7 +94,7 @@ void SocketServer::waitForConnections() {
         }
         std::cout << "Registered connection ID: " << connId << "\n";
         
-        // Creează thread pentru client
+      
         std::thread clientThread(&SocketServer::handleClient, this, clientSocket, 
                                 std::string(clientIP), clientPort, connId);
         clientThread.detach();
@@ -123,11 +123,11 @@ void SocketServer::handleClient(int clientSocket, std::string clientIP, int clie
             break;
         }
         
-        // Asigură că buffer-ul e null-terminated
+       
         buffer[bytesRead] = '\0';
         std::string command(buffer);
         
-        // Curăță newline și whitespace
+ 
         size_t pos;
         while ((pos = command.find('\n')) != std::string::npos) {
             command.erase(pos, 1);
@@ -136,7 +136,7 @@ void SocketServer::handleClient(int clientSocket, std::string clientIP, int clie
             command.erase(pos, 1);
         }
         
-        // Trim whitespace
+
         command.erase(0, command.find_first_not_of(" \t"));
         command.erase(command.find_last_not_of(" \t") + 1);
         
@@ -146,7 +146,7 @@ void SocketServer::handleClient(int clientSocket, std::string clientIP, int clie
         
         std::cout << "Received from " << clientIP << ":" << clientPort << ": " << command << "\n";
         
-        // Verifică comenzi speciale
+
         if (command == "QUIT" || command == "EXIT") {
             std::string byeMsg = "Goodbye!\n";
             send(clientSocket, byeMsg.c_str(), byeMsg.length(), 0);
@@ -159,19 +159,18 @@ void SocketServer::handleClient(int clientSocket, std::string clientIP, int clie
             continue;
         }
         
-        // Procesează comanda în mod thread-safe
+  
         std::string response;
         {
             std::lock_guard<std::mutex> lock(dbMutex);
             response = processCommand(command, connId);
         }
         
-        // Asigură că response-ul se termină cu newline
+    
         if (!response.empty() && response.back() != '\n') {
             response += "\n";
         }
         
-        // Trimite response
         ssize_t sent = send(clientSocket, response.c_str(), response.length(), 0);
         if (sent < 0) {
             std::cerr << "Error sending to " << clientIP << ":" << clientPort 
@@ -183,10 +182,8 @@ void SocketServer::handleClient(int clientSocket, std::string clientIP, int clie
                  << " (" << sent << " bytes)\n";
     }
     
-    // Cleanup
     {
         std::lock_guard<std::mutex> lock(dbMutex);
-        // Aici poți adăuga logică pentru unregister connection dacă e nevoie
         std::cout << "Cleaning up connection " << connId << "\n";
     }
     
@@ -202,7 +199,6 @@ std::string SocketServer::processCommand(const std::string& command, int connId)
             return "ERROR: Database not available";
         }
         
-        // Convertește comanda la uppercase pentru comparație
         std::string cmdUpper = command;
         std::transform(cmdUpper.begin(), cmdUpper.end(), cmdUpper.begin(), ::toupper);
         
@@ -251,7 +247,6 @@ void SocketServer::stop() {
         serverSocket = -1;
     }
     
-    // Așteaptă puțin pentru ca thread-urile să se termine
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
     
     std::cout << "Server stopped\n";

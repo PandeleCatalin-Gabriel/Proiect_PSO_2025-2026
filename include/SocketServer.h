@@ -26,4 +26,4 @@ public:
     void stop();
 };
 
-#endif // SOCKETSERVER_H
+#endif
