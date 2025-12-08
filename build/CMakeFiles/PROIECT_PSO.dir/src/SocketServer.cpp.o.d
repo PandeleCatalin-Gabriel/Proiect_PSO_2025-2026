@@ -205,6 +205,7 @@ CMakeFiles/PROIECT_PSO.dir/src/SocketServer.cpp.o: \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h /usr/include/c++/13/atomic \
+ /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
  /home/gabi/Desktop/Proiect/src/../include/Insert_Command.h \
  /home/gabi/Desktop/Proiect/src/../include/Command_Interface.h \
  /home/gabi/Desktop/Proiect/src/../include/Delete_Command.h \

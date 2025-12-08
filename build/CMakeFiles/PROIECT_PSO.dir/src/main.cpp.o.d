@@ -231,4 +231,5 @@ CMakeFiles/PROIECT_PSO.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /home/gabi/Desktop/Proiect/src/../include/SocketServer.h \
- /usr/include/c++/13/atomic
+ /usr/include/c++/13/atomic /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc

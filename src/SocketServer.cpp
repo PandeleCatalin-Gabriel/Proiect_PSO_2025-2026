@@ -3,6 +3,7 @@
 #include "../include/Delete_Command.h"
 #include "../include/Select_Command.h"
 #include <iostream>
+#include <sstream>
 #include <cstring>
 #include <unistd.h>
 #include <arpa/inet.h>
@@ -202,26 +203,93 @@ std::string SocketServer::processCommand(const std::string& command, int connId)
         std::string cmdUpper = command;
         std::transform(cmdUpper.begin(), cmdUpper.end(), cmdUpper.begin(), ::toupper);
         
+        // ============ LIST TABLES ============
+        if (cmdUpper == "LIST TABLES" || cmdUpper == "SHOW TABLES") {
+            auto tables = db->listTables();
+            std::string result = std::to_string(tables.size()) + " table(s):\n";
+            for (const auto& tableName : tables) {
+                result += tableName + "\n";
+            }
+            return result;
+        }
+        
+        // ============ DESCRIBE table ============
+        if (cmdUpper.substr(0, 8) == "DESCRIBE" || cmdUpper.substr(0, 4) == "DESC") {
+            // Extract table name
+            std::istringstream ss(command);
+            std::string keyword, tableName;
+            ss >> keyword >> tableName;
+            
+            if (tableName.empty()) {
+                return "ERROR: Usage: DESCRIBE <table_name>";
+            }
+            
+            auto table = db->getTable(tableName);
+            if (!table) {
+                return "ERROR: Table '" + tableName + "' not found";
+            }
+            
+            std::string result = "Table: " + table->getTableName() + "\n";
+            result += "Primary Key: " + (table->getPrimaryKeyColumn().empty() ? "(none)" : table->getPrimaryKeyColumn()) + "\n";
+            result += "Columns:\n";
+            
+            for (const auto& col : table->getColumns()) {
+                result += "  " + col.getName() + " " + col.getType();
+                if (col.getMaxLen() > 0) {
+                    result += "(" + std::to_string(col.getMaxLen()) + ")";
+                }
+                if (col.getIsPrimaryKey()) {
+                    result += " PRIMARY KEY";
+                }
+                if (!col.getIsNullable()) {
+                    result += " NOT NULL";
+                }
+                result += "\n";
+            }
+            
+            result += "Row count: " + std::to_string(table->getRows().size()) + "\n";
+            return result;
+        }
+        
+        // ============ INSERT ============
         if (cmdUpper.substr(0, 6) == "INSERT") {
             Insert_Command cmd;
             cmd.parseCommand(command);
-            return cmd.execute(*db);
+            std::string result = cmd.execute(*db);
+            
+            // Auto-save after insert
+            dbManager->saveDatabase();
+            
+            return result;
         }
+        
+        // ============ DELETE ============
         else if (cmdUpper.substr(0, 6) == "DELETE") {
             Delete_Command cmd;
             cmd.parseCommand(command);
-            return cmd.execute(*db);
+            std::string result = cmd.execute(*db);
+            
+            // Auto-save after delete
+            dbManager->saveDatabase();
+            
+            return result;
         }
+        
+        // ============ SELECT ============
         else if (cmdUpper.substr(0, 6) == "SELECT") {
             Select_Command cmd;
             cmd.parseCommand(command);
             return cmd.execute(*db);
         }
+        
+        // ============ HELP ============
         else if (cmdUpper == "HELP") {
             return "Available commands:\n"
+                   "  LIST TABLES - show all tables\n"
+                   "  DESCRIBE <table> - show table structure\n"
                    "  INSERT INTO table VALUES (val1, val2, ...)\n"
-                   "  DELETE FROM table WHERE condition\n"
-                   "  SELECT * FROM table [WHERE condition]\n"
+                   "  DELETE FROM table WHERE column=value\n"
+                   "  SELECT * FROM table [WHERE column=value]\n"
                    "  PING - test connection\n"
                    "  QUIT - disconnect\n";
         }

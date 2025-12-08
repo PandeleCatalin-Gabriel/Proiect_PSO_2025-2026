@@ -1,0 +1,62 @@
+{
+  "database_name": "MainDB",
+  "tables": [
+    {
+      "columns": [
+        {
+          "is_nullable": false,
+          "is_primary_key": true,
+          "max_length": 0,
+          "name": "id",
+          "type": "INT"
+        },
+        {
+          "is_nullable": false,
+          "is_primary_key": false,
+          "max_length": 50,
+          "name": "name",
+          "type": "VARCHAR"
+        },
+        {
+          "is_nullable": true,
+          "is_primary_key": false,
+          "max_length": 100,
+          "name": "email",
+          "type": "VARCHAR"
+        },
+        {
+          "is_nullable": true,
+          "is_primary_key": false,
+          "max_length": 0,
+          "name": "created",
+          "type": "DATE"
+        }
+      ],
+      "primary_key_column": "id",
+      "rows": [
+        {
+          "data": {
+            "created": {
+              "type": "DATE",
+              "value": "2024-01-15"
+            },
+            "email": {
+              "type": "VARCHAR",
+              "value": "alice@example.com"
+            },
+            "id": {
+              "type": "INT",
+              "value": "1"
+            },
+            "name": {
+              "type": "VARCHAR",
+              "value": "Alice"
+            }
+          },
+          "row_id": 1
+        }
+      ],
+      "table_name": "Users"
+    }
+  ]
+}

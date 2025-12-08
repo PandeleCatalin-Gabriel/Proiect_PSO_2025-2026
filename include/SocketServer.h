@@ -6,6 +6,7 @@
 #include <string>
 #include <thread>
 #include <atomic>
+#include <sstream>
 
 class SocketServer {
 private:
